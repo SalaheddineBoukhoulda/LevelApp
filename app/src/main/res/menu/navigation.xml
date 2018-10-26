@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apps_fragment"
+        android:icon="@drawable/ic_home"
+        android:title="Songs"/>
+
+    <item
+        android:id="@+id/ressources_fragment"
+        android:icon="@drawable/ic_preferences"
+        android:title="Albums"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Albums"/>
+
+</menu>
