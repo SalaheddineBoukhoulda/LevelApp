@@ -4,50 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="com.mr_rude.levelappproject.MainActivity">
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="108dp"
+        android:id="@+id/email_signin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:alpha="0.5"
+        android:background="@drawable/transparent_background"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Username or Email"
         android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/password_signin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:alpha="0.5"
+        android:background="@drawable/transparent_background"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/email_signin" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="140dp"
+        android:layout_width="0dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="52dp"
+        android:background="@drawable/radius_corner"
+        android:fontFamily="@font/roboto"
         android:text="Sign in"
-        android:textAllCaps="false"
+        android:textColor="#49B9A4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/password_signin" />
 
     <TextView
         android:id="@+id/textView"
@@ -55,11 +66,12 @@
         android:layout_height="25dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
         android:text="Don't have an account?"
+        android:textColor="#F9FDFC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        tools:layout_editor_absoluteY="431dp" />
 
     <TextView
         android:id="@+id/sign_up"
@@ -67,8 +79,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto"
         android:text="Sign up"
-        android:textColor="#333"
+        android:textColor="#F9FDFC"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -79,8 +92,15 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/roboto"
+        android:text="Sign In "
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
